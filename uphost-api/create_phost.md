@@ -52,6 +52,7 @@
 | **Disks.N.Size** | int | 裸金属机型参数->磁盘大小，单位GB，必须是10GB的整数倍。系统盘20-500GB，数据盘单块盘20-32000GB。 |No|
 | **Disks.N.CouponId** | string | 裸金属机型参数->云盘代金券id。不适用于系统盘。请通过DescribeCoupon接口查询，或登录用户中心查看 |No|
 | **CouponId** | string | 代金券 |No|
+| **VPCIP** | string | 指定ip创建 |No|
 
 ### 响应字段
 
@@ -93,6 +94,7 @@ https://api.ucloud.cn/?Action=CreatePHost
 &Disks.N.Size=7
 &Disks.N.CouponId=NKehxKWX
 &CouponId=nDNLOYMb
+&VPCIP=192.168.10.2
 ```
 
 ### 响应示例
